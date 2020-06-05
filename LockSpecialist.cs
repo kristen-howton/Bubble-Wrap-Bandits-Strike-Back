@@ -16,7 +16,7 @@ namespace Bubble_Wrap_Bandits_Strike_Back
 
             if (bank.VaultScore <= 0)
             {
-                Console.WriteLine("All the locks have been obliterated! You are the key to our success! We love you!!!");
+                Console.WriteLine("All the locks have been obliterated! You are the key to our success! We love");
             }
         }
     }
