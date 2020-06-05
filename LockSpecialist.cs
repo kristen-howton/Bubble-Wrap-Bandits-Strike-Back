@@ -1,3 +1,5 @@
+using System;
+
 namespace Bubble_Wrap_Bandits_Strike_Back
 {
     public class LockSpecialist : IRobber
@@ -9,6 +11,13 @@ namespace Bubble_Wrap_Bandits_Strike_Back
         public void PerformSkill(Bank bank)
         {
             bank.VaultScore -= this.SkillLevel;
+
+            Console.WriteLine($"{this.Name} is destroying all the locks! Decreased security by {this.SkillLevel}.");
+
+            if (bank.VaultScore <= 0)
+            {
+                Console.WriteLine("All the locks have been obliterated! You are the key to our success! We love you!!!");
+            }
         }
     }
 }
