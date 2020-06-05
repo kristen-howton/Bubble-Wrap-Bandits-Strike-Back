@@ -49,7 +49,19 @@ namespace Bubble_Wrap_Bandits_Strike_Back
             };
 
             Console.WriteLine($" The Number of operatives in your rolodex is {rolodex.Count}!!!!!");
+            Console.WriteLine($"Enter the name of a new operative!");
+            string newOperative = Console.ReadLine();
+            Console.Write($@"Choose a speciality: 
+             Enter 1 for Hacker
+             Enter 2 for Muscle
+             Enter 3 for Lock Specialist");
+            Console.WriteLine("");
+            string newSpecialty = Console.ReadLine();
+            Console.WriteLine($"Choose a skill level: 1-100");
+            string newSkillLevel = Console.ReadLine();
+            int skillLevelInt = Int32.Parse(newSkillLevel);
 
         }
+
     }
 }
